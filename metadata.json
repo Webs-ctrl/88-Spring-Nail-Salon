@@ -1,0 +1,6 @@
+{
+  "name": "88 Spring Nail Salon",
+  "description": "A modern, elegant website for 88 Spring Nail Salon in Queens, NY, featuring a serene Zen aesthetic, interactive live booking system, before-and-after nail transformation slider, and a nail inspiration gallery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

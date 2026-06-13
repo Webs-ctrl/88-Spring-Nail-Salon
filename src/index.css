@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Alex+Brush&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-cursive: "Alex Brush", cursive;
+
+  --color-brand-beige: #fefdfb;
+  --color-brand-linen: #f6f1eb;
+  --color-brand-plum: #51425c;
+  --color-brand-lavender: #f1ecf6;
+  --color-brand-lavender-dark: #d6cae3;
+  --color-brand-accent-purple: #beb1d4;
+  --color-brand-gold: #b39256;
+  --color-brand-gold-dark: #91723a;
+  --color-brand-gold-light: #dfcea5;
+  --color-brand-charcoal: #2c2530;
+}
+
+/* Custom scrollbar and peaceful ambient classes */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fefdfb;
+}
+::-webkit-scrollbar-thumb {
+  background: #ecdff5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #beb1d4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Delicate shine effect */
+@keyframes delicate-shimmer {
+  0% { background-position: -200% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 253, 253, 0) 0%,
+    rgba(179, 146, 86, 0.1) 40%,
+    rgba(254, 253, 253, 0) 80%
+  );
+  background-size: 200% auto;
+  animation: delicate-shimmer 4s infinite linear;
+}
